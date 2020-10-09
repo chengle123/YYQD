@@ -1,0 +1,30 @@
+<!--index.wxml-->
+<view class="container">
+    <!-- 头部 -->
+    <van-nav-bar
+        title="收藏列表"
+        fixed
+        placeholder
+        border
+    />
+
+    <!-- 列表 -->
+    <van-swipe-cell right-width="{{ 65 }}">
+        <van-cell>
+            <view slot="title">
+                <span class="van-cell-text">标题文字</span>
+            </view>
+        </van-cell>
+        <van-button square type="danger" slot="right" bindtap="bindDelList">删除</van-button>
+    </van-swipe-cell>
+    <van-swipe-cell right-width="{{ 65 }}">
+        <van-cell>
+            <view slot="title">
+                <span class="van-cell-text">标题文字</span>
+            </view>
+        </van-cell>
+        <van-button square type="danger" slot="right" bindtap="bindDelList">删除</van-button>
+    </van-swipe-cell>
+    <!-- 弹窗 -->
+    <van-dialog id="van-dialog" />
+</view>

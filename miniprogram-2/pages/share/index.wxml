@@ -1,0 +1,33 @@
+<!--index.wxml-->
+<view class="container">
+    <van-checkbox-group value="{{ result }}" bind:change="onChange">
+        <van-cell-group>
+            <van-cell
+            wx:for="{{ list }}"
+            wx:key="index"
+            title="标题文字 {{ item }}"
+            value-class="value-class"
+            clickable
+            data-index="{{ index }}"
+            bind:click="toggle"
+            >
+            <van-checkbox
+                catch:tap="noop"
+                class="checkboxes-{{ index }}"
+                name="{{ item }}"
+                shape="square"
+                checked-color="rgb(7, 193, 96)"
+            />
+            </van-cell>
+        </van-cell-group>
+    </van-checkbox-group>
+    
+    <van-row>
+        <van-col span="12">
+            <van-button plain type="primary" block bindtap="onCancel">取消</van-button>
+        </van-col>
+        <van-col span="12">
+            <van-button type="primary" block bindtap="onConfirm">分享</van-button>
+        </van-col>
+    </van-row>
+</view>

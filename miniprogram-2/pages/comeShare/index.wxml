@@ -1,0 +1,31 @@
+<!--index.wxml-->
+<view class="container">
+    <!-- 头部 -->
+    <van-nav-bar
+        title="xxxx的愿望清单"
+        fixed
+        placeholder
+        border
+    />
+
+    <van-cell-group>
+        <van-cell title="标题文字">
+            <van-tag type="danger" slot="right-icon">未达成</van-tag>
+        </van-cell>
+        <van-cell title="标题文字">
+            <van-tag type="success" slot="right-icon">已达成</van-tag>
+        </van-cell>
+        <van-cell title="标题文字">
+            <van-tag type="success" slot="right-icon">已达成</van-tag>
+        </van-cell>
+    </van-cell-group>
+    
+    <van-row>
+        <van-col span="12">
+            <van-button plain type="primary" block bindtap="onCancel">取消</van-button>
+        </van-col>
+        <van-col span="12">
+            <van-button type="primary" block bindtap="onConfirm">收藏</van-button>
+        </van-col>
+    </van-row>
+</view>

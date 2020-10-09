@@ -1,0 +1,3 @@
+.van-cell-text{
+    margin-right: 40rpx;
+}

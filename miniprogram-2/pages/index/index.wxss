@@ -1,0 +1,41 @@
+/**index.wxss**/
+/* .userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} */
+
+
+/* .userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+} */
+
+
+/* .scroll-view-item{
+  height: 300rpx;
+} */
+
+.addBtnBox{
+    /* width: 100rpx;
+    height: 100rpx;
+    border-radius: 50%;
+    background-color: #11BCB0;
+    font-size: 80rpx;
+    line-height: 85rpx;
+    text-align: center;
+    color: #fff; */
+    position: fixed;
+    z-index: 1;
+    right: 30rpx;
+    bottom: 100rpx;
+}
+/* .success .weui-cell__ft{
+    color: #11BCB0;
+}
+.error .weui-cell__ft{
+    color: #f00;
+} */

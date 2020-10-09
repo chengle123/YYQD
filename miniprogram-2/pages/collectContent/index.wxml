@@ -1,0 +1,26 @@
+<!--index.wxml-->
+<view class="container">
+    <!-- 头部 -->
+    <van-nav-bar
+        title="xxxx的愿望清单"
+        left-text=""
+        left-arrow
+        bind:click-left="onCancel"
+        fixed
+        placeholder
+        border
+    />
+
+	<van-cell wx:for="{{ 6 }}" wx:for-item="index">
+		<image
+		 	slot="icon"
+			style="width: 88px; height: 88px;margin-right:20px;"
+			src="https://img.yzcdn.cn/vant/apple-{{ index + 1 }}.jpg"
+		/>
+		<view slot="title">
+			<view class="van-cell-text">愿望标题</view>
+			<van-tag slot="tags" type="danger">未实现</van-tag>
+			<van-tag slot="tags" type="success">已实现</van-tag>
+		</view>
+	</van-cell>
+</view>

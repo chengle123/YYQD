@@ -1,0 +1,44 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/add/index",
+    "pages/edit/index",
+    "pages/about/index",
+    "pages/collect/index",
+    "pages/collectContent/index",
+    "pages/detail/index",
+    "pages/share/index",
+    "pages/comeShare/index",
+    "pages/logs/logs"
+  ],
+  "tabBar":{
+    "list": [
+      {
+          "selectedIconPath": "images/icon_nav_special.png",
+          "iconPath": "images/icon_tabbar.png",
+          "pagePath": "pages/index/index",
+          "text": "我的"
+      },
+      {
+        "selectedIconPath": "images/icon_nav_special.png",
+        "iconPath": "images/icon_tabbar.png",
+        "pagePath": "pages/collect/index",
+        "text": "收藏"
+      },
+      {
+        "selectedIconPath": "images/icon_nav_special.png",
+        "iconPath": "images/icon_tabbar.png",
+        "pagePath": "pages/about/index",
+        "text": "关于"
+      }
+    ]
+  },
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle":"black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "useExtendedLib": {}
+}

@@ -1,0 +1,48 @@
+<!--index.wxml-->
+<view class="container">
+    <!-- 头部 -->
+    <van-nav-bar
+        title="新增愿望"
+        left-text=""
+        left-arrow
+        bind:click-left="onCancel"
+        fixed
+        placeholder
+        border
+    />
+
+    <van-cell-group>
+        <van-field
+            value="{{ username }}"
+            required
+            clearable
+            label="愿望/物品名"
+            placeholder="请输入愿望名/物品名"
+        />
+        <van-field
+            value="{{ username }}"
+            required
+            clearable
+            label="购买地址/备注"
+            placeholder="请输入购买地址/备注"
+            type="textarea"
+            autosize
+            border="{{ false }}"
+        />
+    </van-cell-group>
+    <van-cell>
+        <view slot="title">
+            <span class="van-cell-text">图片</span>
+            <van-uploader file-list="{{ fileList }}" bind:after-read="afterRead" max-count="1" />
+        </view>
+    </van-cell>
+
+    <van-row>
+        <van-col span="12">
+            <van-button plain type="primary" block bindtap="onCancel">取消</van-button>
+        </van-col>
+        <van-col span="12">
+            <van-button type="primary" block bindtap="onConfirm">确认</van-button>
+        </van-col>
+    </van-row>
+</view>

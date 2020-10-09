@@ -1,0 +1,9 @@
+<!--index.wxml-->
+<view class="container">
+    <!-- 头部 -->
+    <view class="weui-flex head">
+        <view class="weui-flex__item">
+            <view style="text-align: center;">关于</view>
+        </view>
+    </view>
+</view>

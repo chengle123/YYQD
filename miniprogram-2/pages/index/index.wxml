@@ -1,0 +1,46 @@
+<!--index.wxml-->
+<view class="container">
+    <!-- 头部 -->
+    <van-nav-bar
+        title="愿望清单"
+        fixed
+        placeholder
+        border
+    >
+        <view slot="left">
+            <van-image
+                round
+                fit="cover"
+                width="2rem"
+                height="2rem"
+                src="{{userInfo.avatarUrl}}"
+            />
+        </view>
+        <van-icon name="share" slot="right" size="1rem" bindtap="bindViewShare" />
+    </van-nav-bar>
+
+    <!-- 列表 -->
+    <van-swipe-cell right-width="{{ 120 }}">
+        <van-cell title="单元格">
+            <van-tag type="danger" slot="right-icon">未达成</van-tag>
+        </van-cell>
+        <van-button square type="primary" slot="right" bindtap="bindEditList">编辑</van-button>
+        <van-button square type="danger" slot="right" bindtap="bindDelList">删除</van-button>
+    </van-swipe-cell>
+    <van-swipe-cell right-width="{{ 120 }}">
+        <van-cell title="单元格">
+            <van-tag type="success" slot="right-icon">已达成</van-tag>
+        </van-cell>
+        <van-button square type="primary" slot="right" bindtap="bindEditList">编辑</van-button>
+        <van-button square type="danger" slot="right" bindtap="bindDelList">删除</van-button>
+    </van-swipe-cell>
+    
+
+    <!-- 弹窗 -->
+    <van-dialog id="van-dialog" />
+    
+    <!-- 新增按钮 -->
+    <view class="addBtnBox" bindtap="bindViewTap">
+        <van-button round icon="plus" type="primary" />
+    </view>
+</view>
